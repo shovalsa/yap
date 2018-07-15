@@ -82,7 +82,7 @@ var (
 		"polar": PolarMap,
 	}
 	HEB2UDPrefixPOS = map[string]string{
-		"ADVERB":      "ADP",
+		"ADVERB":      "ADV",
 		"CONJ":        "CCONJ",
 		"DEF":         "DET",
 		"PREPOSITION": "ADP",
@@ -90,12 +90,12 @@ var (
 		"TEMP":        "SCONJ",
 	}
 	HEB2UDPOS = map[string]string{
-		"AT":       "PART-Case=Acc",
+		"AT":       "ADP-Case=Acc",
 		"BN":       "VERB-VerbForm=Part",
-		"BNT":      "VERB-Definite=Cons|VerbForm=Part",
+		"BNT":      "VERB-Definite=Cons|VerbForm=Part", // not sure about this one
 		"CC":       "CCONJ",
 		"CC-SUB":   "SCONJ",
-		"CC-COORD": "SCONJ",
+		"CC-COORD": "CCONJ",
 		"CC-REL":   "SCONJ",
 		"CD":       "NUM",
 		"CDT":      "NUM-Definite=Cons",
@@ -108,16 +108,16 @@ var (
 		"JJ":       "ADJ",
 		"JJT":      "ADJ-Definite=Cons",
 		"MD":       "AUX-VerbType=Mod",
-		"NEG":      "ADV",
+		"NEG":      "ADV-Polarity=Neg",
 		"NN":       "NOUN",
 		"NNP":      "PROPN",
 		"NNT":      "NOUN-Definite=Cons",
-		"NNPT":     "PROPN-Abbvr=Yes",
+		"NNPT":     "PROPN-Abbr=Yes",
 		"P":        "ADV-Prefix=Yes",
-		"POS":      "PART-Case=Gen",
+		"POS":      "ADP-Case=Gen",
 		"PRP":      "PRON",
 		"QW":       "ADV-PronType=Int",
-		"RB":       "ADV-Polarity=Neg",
+		"RB":       "ADV",
 		"TTL":      "NOUN-Title=Yes",
 		"VB":       "VERB",
 		// "UNK" should be dropped
